@@ -11,12 +11,12 @@ plt.plot(gas['Year'], gas.Canada,label = 'Canada', c ='b', marker = 'o')
 plt.plot(gas['Year'], gas['South Korea'], label = 'South Korea', c ='yellow', marker = '*')
 plt.plot(gas['Year'], gas['Australia'], label = 'Australia', c ='green', marker = 's')
 #Another way to plot many values!
-countries = ['Australia','Canada','USA','South Korea']
-for country in gas:
-    if country != 'Year':
-    if country in countries:
-        plt.plot(gas.Year, gas[country], marker='.', label = country)
-        print(country)
+#countries = ['Australia','Canada','USA','South Korea']
+#for country in gas:
+    #if country != 'Year':
+    #if country in countries:
+        #plt.plot(gas.Year, gas[country], marker='.', label = country)
+        #print(country)
 
 print(gas.Year[::3])
 plt.xticks(gas.Year[::3].tolist()+[2011])
