@@ -18,6 +18,6 @@ right = fifa.loc[fifa['Preferred Foot'] == 'Right'].count()[0]
 labels = ['Left', 'Right']
 colors = ['#abcdef', '#aabbcc']
 plt.pie([left, right], labels = labels, colors=colors, autopct='%.2f')
+plt.title('Foot Preference of FIFA Players')
 plt.show()
 print(left)
-#Extra coding
