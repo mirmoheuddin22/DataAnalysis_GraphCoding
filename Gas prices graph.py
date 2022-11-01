@@ -17,7 +17,6 @@ for country in gas:
     if country in countries:
         plt.plot(gas.Year, gas[country], marker='.', label = country)
         print(country)
-
 print(gas.Year[::3])
 plt.xticks(gas.Year[::3].tolist()+[2011])
 print(gas.Year)
